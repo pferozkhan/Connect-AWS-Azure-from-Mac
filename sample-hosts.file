@@ -12,14 +12,25 @@
 #
 # FORMAT TO BE FOLLOWED: 
 #=====================================
-#CloudStack,Tool,ServerDescription,IP
+#--- hosts
+#
+#[Azure]
+#Tool,ServerDescription,IP
+#
+#[AWS]
+#Tool,ServerDescription,IP
 #=====================================
 # 
 #===================================================================================================================================
 
-[hosts]
-#Azure,Splunk,WINDOWS-MasterDeploymentServer,x.x.x.x
-#Azure,Splunk,WINDOWS-SlaveDeploymentServer,x.x.x.x
-#AWS,Splunk,AWSHWF,x.x.x.x
-#Ubuntu,Ansible,TestAWS1,x.x.x.x
-#Ubuntu,Ansible,ControlServer,x.x.x.x
+--- hosts
+
+[Azure]
+#Splunk,WINDOWS-MasterServer,X.X.X.X
+#Splunk,NIX-SlaveServer,X.X.X.X
+#Ansible,ControlServer,127.0.0.1
+
+[AWS]
+#Splunk,AWSHWF,X.X.X.X
+#Ansible,TestAWS,X.X.X.X
+#Ansible,ControlServer,X.X.X.X
