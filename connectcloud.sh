@@ -44,11 +44,12 @@ Azure() {
   echo "Azure Instances"
   echo "==============="
 
-  for i in `cat $hostfile | awk '$0 == "[hosts]" {i=1;next};i && i++'`; do
-      stack=`echo $i | cut -d ',' -f1`
-      tool=`echo $i | cut -d ',' -f2`
-      server=`echo $i | cut -d ',' -f3`
-      ip=`echo $i | cut -d ',' -f4`
+  stack=`cat $hostfile | awk '$0 == "--- hosts" {i=1;next};i && i++' | awk '$0 == "[Azure]"' | sed 's,.\(.*\).$,\1,g'`
+
+  for i in `cat $hostfile | awk '$0 == "--- hosts" {i=1;next};i && i++' | awk '$0 == "[Azure]" {i=1;next};i && i++' | awk '/^$/{exit} 1'`; do
+      tool=`echo $i | cut -d ',' -f1`
+      server=`echo $i | cut -d ',' -f2`
+      ip=`echo $i | cut -d ',' -f3`
 
       if [[ $stack == "Azure" ]]; then
 	    echo "  $cnt) $stack - $tool - $server - $ip : enter $cnt"
@@ -81,11 +82,12 @@ AWS() {
   echo "AWS Instances"
   echo "============="
 
-  for i in `cat $hostfile | awk '$0 == "[hosts]" {i=1;next};i && i++'`; do
-      stack=`echo $i | cut -d ',' -f1`
-      tool=`echo $i | cut -d ',' -f2`
-      server=`echo $i | cut -d ',' -f3`
-      ip=`echo $i | cut -d ',' -f4`
+  stack=`cat $hostfile | awk '$0 == "--- hosts" {i=1;next};i && i++' | awk '$0 == "[AWS]"' | sed 's,.\(.*\).$,\1,g'`
+
+  for i in `cat $hostfile  | awk '$0 == "--- hosts" {i=1;next};i && i++' | awk '$0 == "[AWS]" {i=1;next};i && i++' | awk '/^$/{exit} 1'`; do
+      tool=`echo $i | cut -d ',' -f1`
+      server=`echo $i | cut -d ',' -f2`
+      ip=`echo $i | cut -d ',' -f3`
 
       if [[ $stack == "AWS" ]] || [[ $stack == "Ubuntu" ]] ; then
 	    echo "  $cnt) $stack - $tool - $server - $ip : enter $cnt"
