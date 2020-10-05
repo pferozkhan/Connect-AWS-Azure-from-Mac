@@ -1,0 +1,25 @@
+#===================================================================================================================
+# rename this file as hosts.file and copy it in the same location where you have the "connectcloud.sh" shell script
+# enter below your hosts details for connecting to your cloud stack [AWS & Azure] only.
+# use the below comma seperated format for your hosts definition, after the [hosts] stanza line  
+# NOTE: make sure you do not have any spaces or gaps in any of the lines
+#
+# CloudStack naming convention
+#=============================
+# Azure - must be entered as Azure
+# AWS - must be entered as AWS
+# Ubuntu - must be entered as Ubuntu
+#
+# FORMAT TO BE FOLLOWED: 
+#=====================================
+#CloudStack,Tool,ServerDescription,IP
+#=====================================
+# 
+#===================================================================================================================
+
+[hosts]
+#Azure,Splunk,WINDOWS-MasterDeploymentServer,x.x.x.x
+#Azure,Splunk,WINDOWS-SlaveDeploymentServer,x.x.x.x
+#AWS,Splunk,AWSHWF,x.x.x.x
+#Ubuntu,Ansible,TestAWS1,x.x.x.x
+#Ubuntu,Ansible,ControlServer,x.x.x.x
