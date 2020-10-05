@@ -1,7 +1,7 @@
 # Connect-AWS-Azure-from-Mac
 Shell script to connect to AWS &amp; Azure hosts from Mac
 
-STEPS before executing the script
+PreRequisites before executing the script
 =================================
 1. Copy both the connectcloud.sh & sample-hosts.file to a location in your mac
 2. Rename the "sample-hosts.file" as "hosts.file" (Recommended - copy it in the same location where you have the "connectcloud.sh" script)
