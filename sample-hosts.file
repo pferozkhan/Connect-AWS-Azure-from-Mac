@@ -1,5 +1,5 @@
-#===================================================================================================================
-# rename this file as hosts.file and copy it in the same location where you have the "connectcloud.sh" shell script
+#==================================================================================================================================
+# rename the "sample-hosts.file" as "hosts.file" and copy it in the same location where you have the "connectcloud.sh" shell script
 # enter below your hosts details for connecting to your cloud stack [AWS & Azure] only.
 # use the below comma seperated format for your hosts definition, after the [hosts] stanza line  
 # NOTE: make sure you do not have any spaces or gaps in any of the lines
@@ -15,7 +15,7 @@
 #CloudStack,Tool,ServerDescription,IP
 #=====================================
 # 
-#===================================================================================================================
+#===================================================================================================================================
 
 [hosts]
 #Azure,Splunk,WINDOWS-MasterDeploymentServer,x.x.x.x
