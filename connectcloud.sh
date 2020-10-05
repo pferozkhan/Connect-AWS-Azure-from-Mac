@@ -1,14 +1,18 @@
 #!/bin/bash
 
-#=========================================================================================================
-# Save and Run this script as "$. connectcloud.sh", from where this script is located.
-# change the below variables based on your environment.
+#===========================================================================================================================================
+# save and run this script as "$. connectcloud.sh", from where this script is located.
+# rename the "sample-hosts.file" as "hosts.file" and copy it in the same location where you have the "connectcloud.sh" shell script.
+# this script "connectcloud.sh", will not work without the "hosts.file" and the needed hosts parameters included in the "hosts.file".
+# make the needed changes in the "hosts.file", as discribed within the "hosts.file".
+# after that make the below variable changes.
+# changes to the below variables must be based on your environment settings.
 #
 # AWS_Key_Path - the path where your .pem file is located, which is used to connect your AWS EC2 instance.
 # home_path - the path where you will copy this script & the hosts.file.
 # hostfile - the path where the hosts file is located.
 # pemFile - name of the .pem file, used for AWS EC2 instance connections.
-#=========================================================================================================
+#============================================================================================================================================
 
 #variable definition
 #===================
