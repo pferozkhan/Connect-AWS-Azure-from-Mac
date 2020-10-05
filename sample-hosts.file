@@ -1,26 +1,26 @@
-#==================================================================================================================================
-# rename the "sample-hosts.file" as "hosts.file" and copy it in the same location where you have the "connectcloud.sh" shell script
-# enter below your IP details with the Tool & Server Description, for connecting to your cloud stack [AWS & Azure] only.
-# use the below comma seperated format for your hosts definition, after the --- hosts stanza line  
-# NOTE: make sure you do not have any spaces or gaps in any of the lines, where you are defining your hosts.
-#
-# CloudStack naming convention
-#=============================
-# Azure - must be entered as Azure
-# AWS - must be entered as AWS
-#
-# FORMAT TO BE FOLLOWED: 
-#=====================================
-#--- hosts                           #
-#                                    #
-#[Azure]                             #
-#Tool,ServerDescription,IP           #
-#                                    #
-#[AWS]                               #
-#Tool,ServerDescription,IP           #
-#=====================================
-# 
-#===================================================================================================================================
+#====================================================================================================================================
+# rename the "sample-hosts.file" as "hosts.file" and copy it in the same location where you have the "connectcloud.sh" shell script #
+# enter below your IP details with the Tool & Server Description, for connecting to your cloud stack [AWS & Azure] only.            #
+# use the below comma seperated format for your hosts definition, after the --- hosts stanza line                                   #
+# NOTE: make sure you do not have any spaces or gaps in any of the lines, where you are defining your hosts.                        #
+#                                                                                                                                   #
+# CloudStack naming convention                                                                                                      #  
+#=============================                                                                                                      # 
+# Azure - must be entered as Azure                                                                                                  #
+# AWS - must be entered as AWS                                                                                                      #        
+#                                                                                                                                   #
+# FORMAT TO BE FOLLOWED:                                                                                                            #
+#=====================================                                                                                              #
+#--- hosts                           #                                                                                              #
+#                                    #                                                                                              #
+#[Azure]                             #                                                                                              #
+#Tool,ServerDescription,IP           #                                                                                              #
+#                                    #                                                                                              #
+#[AWS]                               #                                                                                              #      
+#Tool,ServerDescription,IP           #                                                                                              #    
+#=====================================                                                                                              #
+#                                                                                                                                   #    
+#====================================================================================================================================
 
 --- hosts
 
