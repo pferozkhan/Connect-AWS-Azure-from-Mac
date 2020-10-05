@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #=========================================================================================================
-# Run this script as "$. connectcloud.sh", from where this script is located.
+# Save and Run this script as "$. connectcloud.sh", from where this script is located.
 # change the below variables based on your environment.
 #
 # AWS_Key_Path - the path where your .pem file is located, which is used to connect your AWS EC2 instance.
