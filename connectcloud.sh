@@ -25,7 +25,7 @@ alias home_path='cd /path/to/where/the/host & script/file/is/located/'
 #hostfile=/Users/s1888/hosts.file
 hostfile=/path/to/where/hosts.file is located
 
-#pemFile=SplunkProd.pem
+#pemFile=SplunkProd.pem - Only for AWS
 pemFile=Name-of-the-PEM-File
 
 Azuretmphostfile=/tmp/Azuretmphostfile
